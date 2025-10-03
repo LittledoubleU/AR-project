@@ -47,10 +47,12 @@ export default function ARScene() {
         const markerRoot = new THREE.Group();
         scene.add(markerRoot);
     
-        const markerControls = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
-            type: "pattern",
-            patternUrl: "./assets/test.patt", // custom marker
-        });
+        // const markerControls = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
+        //     type: "pattern",
+        //     patternUrl: "./assets/test.patt", // custom marker
+        // });
+
+        // console.log(markerControls)
     
         // --- Example 3D Object ---
         const geometry = new THREE.BoxGeometry(1, 1, 1);
